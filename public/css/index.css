@@ -1,247 +1,320 @@
 .task1 {
+	display: grid;
 }
 
 .task2 {
+	display: grid;
+	justify-content: flex-start;
 }
 
 .task3 {
   display: grid;
+	row-gap: 25px;
+	column-gap: 10px;
 }
 
 .task4 {
   display: grid;
 }
 .task4 .item2 {
+	order: 5;
 }
 .task4 .item4 {
+	order: 4;
 }
 .task4 .item3 {
+	order: 6;
 }
 
 .task5 {
   display: grid;
+	justify-content:flex-start;
 }
 
 .task6 {
   display: grid;
+	justify-content:flex-end;
 }
 
 .task7 {
   display: grid;
+	justify-content:center;
 }
 
 .task8 {
   display: grid;
+	justify-content:space-between;
 }
 
 .task9 {
   display: grid;
+	justify-content:space-around;
 }
 
 .task10 {
   display: grid;
+	justify-content:space-evenly;
 }
 
 .task11 {
   display: grid;
+	justify-content:stretch;
 }
 
 .task12 {
   display: grid;
+	align-content: flex-start;
 }
 
 .task13 {
   display: grid;
+	align-content: flex-end;
 }
 
 .task14 {
   display: grid;
+	align-content: center;
 }
 
 .task15 {
   display: grid;
+	align-content: stretch;
 }
 
 .task16 {
   display: grid;
+	align-content: space-between;
 }
 
 .task17 {
   display: grid;
+	align-content: space-around;
 }
 
 .task18 {
   display: grid;
+	align-content: space-evenly;
 }
 
 .task19 {
   display: grid;
+	align-content: center;
 }
 
 .task20 {
   display: grid;
+	justify-content: flex-start;
+	justify-items: flex-start;
 }
 
 .task21 {
   display: grid;
+	justify-items: flex-end;
 }
 
 .task22 {
   display: grid;
+	justify-items: center;
 }
 
 .task23 {
   display: grid;
+	justify-items: stretch;
 }
 
 .task24 {
   display: grid;
+	align-items: flex-start;
 }
 
 .task25 {
   display: grid;
+	align-items: flex-end;
 }
 
 .task26 {
   display: grid;
+	align-items: center;
 }
 
 .task27 {
   display: grid;
+	align-items: stretch;
 }
 
 .task28 {
   display: grid;
+	align-items: flex-end;
 }
 
 .task29 {
   display: grid;
+	justify-items: center;
+	align-items: stretch;
 }
 
 .task30 {
   display: grid;
 }
 .task30 .item1 {
+	justify-self: flex-start;
 }
 
 .task31 {
   display: grid;
 }
 .task31 .item2 {
+	justify-self: flex-end;
 }
 
 .task32 {
   display: grid;
 }
 .task32 .item3 {
+	justify-self: center;
 }
 
 .task33 {
   display: grid;
 }
 .task33 .item4 {
+	justify-self: stretch;
 }
 
 .task34 {
   display: grid;
 }
 .task34 .item1 {
+	align-self: flex-start;
 }
 
 .task35 {
   display: grid;
 }
 .task35 .item2 {
+	align-self: flex-end;
 }
 
 .task36 {
   display: grid;
 }
 .task36 .item3 {
+	align-self: center;
 }
 
 .task37 {
   display: grid;
 }
 .task37 .item4 {
+	align-self: stretch;
 }
 
 .task38 {
   display: grid;
 }
 .task38 .item5 {
+	justify-self: flex-start;
+	align-self: center;
 }
 
 .task39 {
   display: grid;
+	grid-template-rows: 1fr 2fr 3fr;
 }
 
 .task40 {
   display: grid;
+	grid-template-columns: fit-content(30%) fit-content(70%);
 }
 
 .task41 {
   display: grid;
+	grid-template-rows: repeat(3, minmax(110px, 30%));
+	grid-template-columns: repeat(2, 1fr);
+	
 }
 
 .task42 {
   display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: repeat(4, 1fr);
+	grid-template-areas: "big1 small2" "big1 small3" "big2 small4" "big2 small5";
 }
 .task42 .item1 {
+	grid-area: big1;
 }
 .task42 .item2 {
+	grid-area: small2;
 }
 .task42 .item3 {
+	grid-area: small3;
 }
 .task42 .item4 {
+	grid-area: big2;
 }
 .task42 .item5 {
+	grid-area: small4;
 }
 .task42 .item6 {
+	grid-area: small5;
 }
 
 .task43 {
   display: grid;
 }
 .task43 .item3 {
+	grid-column: 1 / 3;
 }
 
 .task44 {
   display: grid;
 }
 .task44 .item3 {
+	grid-row: 1 / 3;
 }
 
 .task45 {
   display: grid;
 }
 .task45 .item3 {
+	/* grid-area: 1 / 1 / 3 / 3; */
+	grid-column: 1 / 3;
+	grid-row: 1 / 3;
+
 }
 
 .task46 {
   display: grid;
+	grid-auto-columns: min-content max-content;
 }
 
 .task47 {
   display: grid;
+	grid-auto-rows: min-content;
 }
 
 .task48 {
   display: grid;
-}
-
-.task50 {
-  display: grid;
+	grid-auto-flow: row;
 }
 
 .task49 {
   display: grid;
+	grid-auto-flow: column;
+}
+
+.task50 {
+  display: grid;
+	grid-auto-flow: dense;
+
 }
 
 .task51 {
   display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
 }
 
 .task52 {
   display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
